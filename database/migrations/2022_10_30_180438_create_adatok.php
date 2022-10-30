@@ -15,6 +15,8 @@ return new class extends Migration
     {
         Schema::create('adatok', function (Blueprint $table) {
             $table->id("a_id");
+            $table->string('vezeteknev', 100);
+            $table->string('keresztnev', 100);
         });
     }
 
