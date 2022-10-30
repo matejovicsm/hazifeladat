@@ -2,6 +2,25 @@
 @section('title',"fooldal")
     
 @section('content')
-<h1>Helló főoldal</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
 @endsection
     

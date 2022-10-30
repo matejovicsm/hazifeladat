@@ -13,4 +13,4 @@ Route::get('/fooldal', function () {
     return view('fooldal');
 });
 
-
+Route::get('/form',[hazi::class,"urlap"]);

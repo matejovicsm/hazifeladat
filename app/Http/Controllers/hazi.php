@@ -10,5 +10,8 @@ class hazi extends Controller
     public function pelda(){
         $adatok = DB::select("SELECT * FROM adatok");
     }
+    public function urlap(){
+        return view("fooldal");
+    }
    
 }
