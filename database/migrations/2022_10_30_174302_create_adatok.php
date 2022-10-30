@@ -14,8 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('adatok', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->id("a_id");
         });
     }
 
