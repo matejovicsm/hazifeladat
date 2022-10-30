@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id("a_id");
             $table->string('vezeteknev', 100);
             $table->string('keresztnev', 100);
+            $table->year('szuletesi_ev');
         });
     }
 
