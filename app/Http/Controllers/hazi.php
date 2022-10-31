@@ -34,6 +34,8 @@ class hazi extends Controller
 
             ]);
             DB::insert("INSERT INTO adatok (vezeteknev, keresztnev, szuletesi_ev) VALUES (?,?,?)",[$req->get('vezeteknev'),$req->get('keresztnev'),$req->get('szuletesi_ev')]);
+
+            return redirect("/fooldal")->with("kesz","Az adatfelvitel sikeres volt!");
     }
    
 }
