@@ -19,7 +19,11 @@
                     <div class="my-3">
                         <label for="szuletesi_ev">Születési év:</label>
                         <input type="year" id="szuletesi_ev" name="szuletesi_ev" class="form-control">
-                    </div>e
+                    </div>
+                    <div class="my-3">
+                        
+                        <button type="submit" class="btn btn-warning rounded-5">Rögzítés</button>
+                    </div>
 
                 </form>
             </div>
