@@ -7,6 +7,12 @@
         <div class="col-6">
             <div class="bg-dark text-white rounded p-3">
                 <form method="POST">
+                    @if (session()->get('kesz'))
+                        <div class="alert alert-success">
+
+                            {{session()->get('kesz')}}
+                        </div>
+                    @endif
                 @csrf
                     <div class="my-3">
                         <label for="vezeteknev">Vezetéknév:</label>
