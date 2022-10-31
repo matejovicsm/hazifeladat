@@ -11,7 +11,7 @@ class hazi extends Controller
     public function urlap(){
         return view("fooldal");
     }
-    
+
     public function rogzites(Request $req){
         $req->validate(
             [
@@ -33,6 +33,7 @@ class hazi extends Controller
                 "szuletesi_ev.max"=>"Maximum 2022 lehet!"
 
             ]);
+            DB::insert("INSERT INTO adatok (vezeteknev, keresztnev, szuletesi_ev) VALUES (?,?,?)",[$req->get('vezeteknev'),$req->get('keresztnev'),$req->get('szuletesi_ev')]);
     }
    
 }
