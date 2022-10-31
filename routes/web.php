@@ -13,5 +13,5 @@ Route::get('/fooldal', function () {
     return view('fooldal');
 });
 
-Route::get('/form',[hazi::class,"urlap"]);
-Route::post('/form',[hazi::class,"rogzites"]);
+Route::get('/fooldal',[hazi::class,"urlap"]);
+Route::post('/fooldal',[hazi::class,"rogzites"]);
