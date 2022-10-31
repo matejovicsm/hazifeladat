@@ -14,3 +14,4 @@ Route::get('/fooldal', function () {
 });
 
 Route::get('/form',[hazi::class,"urlap"]);
+Route::post('/form',[hazi::class,"rogzites"]);
